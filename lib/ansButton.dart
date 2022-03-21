@@ -11,7 +11,7 @@ class AnsButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         onPressed: selectHolder,
-        child: const Text('Answer 1'),
+        child: const Text('Red'),
       ),
     );
   }

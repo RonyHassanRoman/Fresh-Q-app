@@ -21,9 +21,21 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     var questions = [
-      'What is your fav color?',
-      'what is your fav place?',
-      'what is wala?'
+      {
+        'questionText': 'What is your fav color?',
+        'answer': ['Red ', 'Green', 'Yello']
+      },
+      {
+        'questionText': 'what is your fav place?',
+        'answer': ['Dhaka ', 'Nil', 'Raj']
+      },
+      {
+        'questionText': 'What is your fav teacher?',
+        'answer': [' Rony ', 'Rony', 'Rony']
+      }
+
+      // 'what is your fav place?',
+      // 'what is wala?'
     ];
     return Scaffold(
       appBar: AppBar(
@@ -32,7 +44,7 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: [
-          Quesstions(questions[questionIndex]),
+          Quesstions(questions[questionIndex]['questionText'] as String),
           const SizedBox(
             height: 10,
           ),
