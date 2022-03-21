@@ -36,19 +36,19 @@ class _HomeState extends State<Home> {
           const SizedBox(
             height: 10,
           ),
-          AnsButton(),
+          AnsButton(answerQuestion),
           const SizedBox(
             height: 20,
           ),
-          AnsButton(),
+          AnsButton(answerQuestion),
           const SizedBox(
             height: 20,
           ),
-          AnsButton(),
+          AnsButton(answerQuestion),
           const SizedBox(
             height: 20,
           ),
-          AnsButton(),
+          AnsButton(answerQuestion),
           const SizedBox(
             height: 20,
           ),
