@@ -1,3 +1,4 @@
+import 'package:anotherquizapp/ansButton.dart';
 import 'package:anotherquizapp/questions.dart';
 import 'package:flutter/material.dart';
 
@@ -35,31 +36,19 @@ class _HomeState extends State<Home> {
           const SizedBox(
             height: 10,
           ),
-          ElevatedButton(
-            onPressed: answerQuestion,
-            child: const Text('Answer 1'),
-          ),
+          AnsButton(),
           const SizedBox(
             height: 20,
           ),
-          ElevatedButton(
-            onPressed: answerQuestion,
-            child: const Text('Answer 1'),
-          ),
+          AnsButton(),
           const SizedBox(
             height: 20,
           ),
-          ElevatedButton(
-            onPressed: answerQuestion,
-            child: const Text('Answer 1'),
-          ),
+          AnsButton(),
           const SizedBox(
             height: 20,
           ),
-          ElevatedButton(
-            onPressed: answerQuestion,
-            child: const Text('Answer 1'),
-          ),
+          AnsButton(),
           const SizedBox(
             height: 20,
           ),
