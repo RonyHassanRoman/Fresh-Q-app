@@ -1,3 +1,4 @@
+import 'package:anotherquizapp/questions.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -30,7 +31,7 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: [
-          Text(questions[questionIndex]),
+          Quesstions(questions[questionIndex]),
           const SizedBox(
             height: 10,
           ),
