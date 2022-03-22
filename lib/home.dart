@@ -23,15 +23,15 @@ class _HomeState extends State<Home> {
     var questions = [
       {
         'questionText': 'What is your fav color?',
-        'answer': ['Red ', 'Green', 'Yello']
+        'answers': ['Red ', 'Green', 'Yellow']
       },
       {
         'questionText': 'what is your fav place?',
-        'answer': ['Dhaka ', 'Nil', 'Raj']
+        'answers': ['Dhaka ', 'Nil', 'Raj']
       },
       {
         'questionText': 'What is your fav teacher?',
-        'answer': [' Rony ', 'Rony', 'Rony']
+        'answers': [' Rony ', 'Rony', 'Rony']
       }
 
       // 'what is your fav place?',
@@ -48,22 +48,10 @@ class _HomeState extends State<Home> {
           const SizedBox(
             height: 10,
           ),
-          AnsButton(answerQuestion),
-          const SizedBox(
-            height: 20,
-          ),
-          AnsButton(answerQuestion),
-          const SizedBox(
-            height: 20,
-          ),
-          AnsButton(answerQuestion),
-          const SizedBox(
-            height: 20,
-          ),
-          AnsButton(answerQuestion),
-          const SizedBox(
-            height: 20,
-          ),
+          ...(questions[questionIndex]['answers'] as List<String>)
+              .map((answer) {
+            return AnsButton(answerQuestion, answer);
+          }).toList()
         ],
       ),
     );
